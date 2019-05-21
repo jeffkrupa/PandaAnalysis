@@ -25,7 +25,7 @@ with open(args.json) as fjson:
   features = payload['features']
 
 f = root.TFile(args.ifile)
-t = f.Get('events')
+t = f.Get('Events')
 
 treestruct = TreeStruct()
 nent = int(t.GetEntries())

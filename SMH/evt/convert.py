@@ -30,7 +30,7 @@ with open(args.json) as jsonfile:
         sys.exit(1)
 
 s = Selector()
-chain = root.TChain('events')
+chain = root.TChain('Events')
 for sample in samples:
     chain.AddFile(basedir + '/' + sample + '.root')
 
