@@ -1,0 +1,21 @@
+{
+    "base": "/eos/uscms//store/user/lpchbb/cmantill//pfbits-v15.03-all",
+    "samples": [
+	{
+            "name": "VectorDiJet115",
+	    "samples": ["VectorDiJet1Jet_madgraph_Mphi115Mchi3000_13TeV_withPF"]
+	},
+        { 
+            "name": "QCD", 
+            "samples": ["QCD_HT200to300_13TeV_withPF","QCD_HT300to500_13TeV_withPF","QCD_HT500to700_13TeV_withPF","QCD_HT700to1000_13TeV_withPF","QCD_HT1000to1500_13TeV_withPF","QCD_HT1500to2000_13TeV_withPF","QCD_HT2000toInf_13TeV_withPF"]
+        }
+    ],
+    "features": [
+        "fj_tau21","fj_tau32","fj_tau41","fj_tau42",
+	"fj_D2b1","fj_M2b1","fj_N2b1",
+	"fj_D2sdb1","fj_M2sdb1","fj_N2sdb1",
+	"fj_eta","fj_phi","fj_pt","fj_msd","fj_rho"
+            ],
+    "weight": "1.",
+    "cut": "fj_pt>400 && fj_msd>40"
+}
