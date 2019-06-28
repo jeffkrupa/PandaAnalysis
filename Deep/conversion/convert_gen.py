@@ -4,11 +4,11 @@ from sys import argv, exit
 import numpy as np 
 from os import getenv, system
 from PandaCore.Utils.logging import logger
-import PandaAnalysis.Deep.job_deepgen_utilities as deep_utils
+#import PandaAnalysis.Deep.job_deepgen_utilities as deep_utils
 import re
 from glob import glob 
 
-deep_utils.NORM = True
+#deep_utils.NORM = True
 truth = ['nprongs']
 fractions = {'train':0.6, 'test':0.15}
 fcfg = open(argv[1])
@@ -77,8 +77,8 @@ if not data['pt'].shape[0]:
     logger.info(me, 'Nothing passed the mask')
     exit(0)
 
-if deep_utils.NORM:
-    deep_utils.normalize_arrays(data, 'particles')
+#if deep_utils.NORM:
+#    deep_utils.normalize_arrays(data, 'particles')
 
 
 def reweight(x_pt):

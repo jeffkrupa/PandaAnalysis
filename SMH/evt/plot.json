@@ -11,10 +11,7 @@
         }
     ],
     "features": [
-        "fj_tau21","fj_tau32","fj_tau41","fj_tau42",
-	"fj_D2b1","fj_M2b1","fj_N2b1",
-	"fj_D2sdb1","fj_M2sdb1","fj_N2sdb1",
-	"fj_eta","fj_phi","fj_pt","fj_msd","fj_rho"
+	"fj_pt"
             ],
     "weight": "1.",
     "cut": "fj_pt>400 && fj_msd>40"

@@ -1,10 +1,6 @@
 {
-    "base": "/eos/uscms//store/user/lpchbb/cmantill//pfbits-v15.03-all",
+    "base": "/eos/uscms/store/group/lpcbacon/jkrupa/",
     "samples": [
-        {
-            "name": "VectorDiJet",
-            "samples": ["VectorDiJet1Jet_madgraph_Mphi50Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi115Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi125Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi150Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi175Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi200Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi225Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi250Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi275Mchi3000_13TeV_withPF","VectorDiJet1Jet_madgraph_Mphi300Mchi3000_13TeV_withPF"]
-	},
 	{
             "name": "VectorDiJet115",
 	    "samples": ["VectorDiJet1Jet_madgraph_Mphi115Mchi3000_13TeV_withPF"]
@@ -15,9 +11,10 @@
         }
     ],
     "features": [
-        "fj_tau21","fj_tau32","fj_tau41","fj_tau42",
-        "fj_e3_v1_sdb1/fj_e2_sdb1", "fj_e3_sdb1/fj_e2_sdb1/fj_e2_sdb1"
+	"fj_D2sdb1","fj_N2sdb1","fj_M2sdb1",
+        "fj_e2_sdb1","fj_e3_sdb1","fj_e3_v1_sdb1","fj_e3_v2_sdb1","fj_e4_v1_sdb1","fj_e4_v2_sdb1",
+        "fj_eta", "fj_phi"
             ],
-    "weight": "1.",
-    "cut": "1==1"
+    "weight": "sf_ptWeight",
+    "cut": "fj_pt>400 && fj_msd>40"
 }
