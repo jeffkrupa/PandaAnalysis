@@ -1,0 +1,20 @@
+{
+    "base": "/eos/uscms/store/group/lpcbacon/jkrupa/",
+    "samples": [
+	{
+            "name": "VectorDiJet115",
+	    "samples": ["VectorDiJet1Jet_madgraph_Mphi115Mchi3000_13TeV_withPF"]
+	},
+	{
+	    "name": "QCD",
+	    "samples": ["QCD_HT200to300_13TeV_withPF","QCD_HT300to500_13TeV_withPF","QCD_HT500to700_13TeV_withPF","QCD_HT700to1000_13TeV_withPF","QCD_HT1000to1500_13TeV_withPF","QCD_HT1500to2000_13TeV_withPF","QCD_HT2000toInf_13TeV_withPF"]
+        }
+    ],
+    "features": [
+	"fj_D2sdb1","fj_N2sdb1","fj_M2sdb1",
+        "fj_e2_sdb1","fj_e3_sdb1","fj_e3_v1_sdb1","fj_e3_v2_sdb1","fj_e4_v1_sdb1","fj_e4_v2_sdb1",
+        "fj_eta", "fj_phi"
+            ],
+    "weight": "sf_ptWeight",
+    "cut": "fj_pt>400 && fj_msd>40"
+}

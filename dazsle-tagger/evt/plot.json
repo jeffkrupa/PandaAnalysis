@@ -1,0 +1,18 @@
+{
+    "base": "/eos/uscms/store/group/lpcbacon/jkrupa/Jun28_bits",
+    "samples": [
+	{
+            "name": "VectorDiJet115",
+	    "samples": ["VectorDiJet1Jet_madgraph_Mphi115Mchi3000_13TeV_withPF"]
+	},
+        { 
+            "name": "QCD", 
+            "samples": ["QCD_HT200to300_13TeV_8X","QCD_HT300to500_13TeV_8X","QCD_HT500to700_13TeV_8X","QCD_HT700to1000_13TeV_8X","QCD_HT1000to1500_13TeV_8X","QCD_HT1500to2000_13TeV_8X","QCD_HT2000toInf_13TeV_8X"]
+        }
+    ],
+    "features": [
+	"fj_pt"
+            ],
+    "weight": "1.",
+    "cut": "fj_pt>400 && fj_msd>40"
+}
